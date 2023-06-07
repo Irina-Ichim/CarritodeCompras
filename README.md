@@ -33,7 +33,6 @@ Cómo utilizar el proyecto
 5.	Para realizar cambios en el carrito, puedes eliminar productos individualmente, cambiar las cantidades o vaciar completamente el carrito.
 6.	Cuando estés listo para finalizar la compra, haz clic en el botón "Finalizar compra". Se te solicitará que completes la información personal requerida.
 7.	Una vez que hayas proporcionado los detalles necesarios, se procesará la compra y se mostrará un mensaje de confirmación.
-8.	
 
 Contribuciones
 
