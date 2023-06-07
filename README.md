@@ -3,6 +3,7 @@ Carrito de compras utilizando JavaScript y HTML
 Este proyecto es un carrito de compras interactivo implementado utilizando JavaScript y HTML. Proporciona una interfaz intuitiva para que los usuarios puedan agregar productos a su carrito, realizar cálculos de precios y completar la compra.
 
 Funcionalidades clave
+
 •	Selección de productos: Los usuarios pueden explorar una lista de productos disponibles y agregarlos al carrito con un solo clic. Cada producto muestra su nombre, descripción, precio y una imagen ilustrativa.
 
 •	Gestión del carrito: Los usuarios pueden ver el contenido actual de su carrito en cualquier momento. Pueden eliminar productos individualmente, cambiar las cantidades o vaciar completamente el carrito.
