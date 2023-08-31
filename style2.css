@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff6600;
+  }
+
+  button, .btn-add-cart {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, .btn-add-cart:hover {
+    background-color: #e65100;
+  }
+  .servicios, .productos, .containerForm {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .fotogrande {
+    background-image: url('/Img/background-image.jpg');
+    background-size: cover;
+    height: 300px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #ff6600;
+  }
+  
+    
