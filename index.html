@@ -89,156 +89,97 @@
         </div>
     </section>
     
-    
     <section class="productos">
-        <div>
-            <h3>Nuestros productos</h3>
-        </div>
-
-        <div class="contenedorProductos">
-            <div class="products"> 
-                <!--class =contenedor-items -->
-
-                <div class="carts">
-                    <div>
-                        <img src="Img/royal-canin.jpg" alt="" class="img-item">
-                    </div>
-                    <!--class item-->
-                    <p class="title">Royal Canin Mini Adult pienso para perros mayores</p>
-                    <div> 
-                        <p class="precio-item"><span>25.40</span>€</p>
-                    </div>
-             
-                    <a href="" data-id="1" class="btn-add-cart">Agregar al Carrito</a>
-                </div>
-
-                <div class="carts">
-                    <div>
-                        <img src="Img/nath.jpg" alt="" class="img-item">
-                    </div>
-                    <!--class item-->
-                    <p class="title">Nath Adult Sterilised Pollo en Gelatina sobre para gatos</p>
-                    <div>
-                        <p class="precio-item"><span >48.30</span>€</p>
-                    </div>
-             
-                    <a href="" data-id="2" class="btn-add-cart">Agregar al Carrito</a>
-                </div>
-
-                <div class="carts">
-                    <div>
-                        <img src="Img/th-3187545022.jpg" alt="" class="img-item">
-                    </div>
-                    <!--class item-->
-                    <p class="title">Vitakraft Premium Menu Comida para periquitos</p>
-                    <div>
-                        <p class="precio-item"><span>18.50</span>€</p>
-                    </div>
-             
-                    <a href="" data-id="3" class="btn-add-cart">Agregar al Carrito</a>
-                </div>
-
-                <div class="carts">
-                    <div>
-                        <img src="Img/tk.jpg" alt="" class="img-item">
-                    </div>
-                    <!--class item-->
-                    <p class="title">TK-Pet Barcelona Transportín de plástico para mascotas</p>
-                    <div>
-                        <p class="precio-item"><span>79.60</span>€</p>
-                    </div>
-             
-                    <a href="" data-id="4" class="btn-add-cart">Agregar al Carrito</a>
-                </div>
-
-                <div class="carts">
-                    <div>
-                        <img src="Img/kit-conejp.jpg" alt="" class="img-item">
-                    </div>
-                    <!--class item-->
-                    <p class="title">Small Life kit de iniciación para disfrutar con tus conejos</p>
-                    <div>
-                        <p class="precio-item"><span>48.20</span>€</p>
-                    </div>
-             
-                    <a href="" data-id="5" class="btn-add-cart">Agregar al Carrito</a>
-                </div>
-
-                <div class="carts">
-                    <div>
-                        <img src="Img/empapadores.jpg" alt="" class="img-item">
-                    </div>
-                    <!--class item-->
-                    <p class="title">Nova Clean Bandeja de Empapadores para perros</p>
-                    <div>
-                        <p class="precio-item"><span>10.35</span>€</p>
-                    </div>
-             
-                    <a href="" data-id="6" class="btn-add-cart">Agregar al Carrito</a>
-                </div>
-        
+        <h3>Nuestros productos</h3>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="Img/royal-canin.jpg" alt="">
+                <h4>Royal Canin Mini Adult pienso para perros mayores</h4>
+                <p class="product-price">25.40€</p>
+                <button>Agregar al Carrito</button>
             </div>
+    
+    
+            <div class="product-card">
+                <img src="Img/nath.jpg" alt="">
+                <h4>Nath Adult Sterilised Pollo en Gelatina sobre para gatos</h4>
+                <p class="product-price">48.30€</p>
+                <button>Agregar al Carrito</button>
+            </div>
+    
+    
+            <div class="product-card">
+                <img src="Img/th-3187545022.jpg" alt="">
+                <h4>Vitakraft Premium Menu Comida para periquitos</h4>
+                <p class="product-price">18.50€</p>
+                <button>Agregar al Carrito</button>
+            </div>
+    
+            <div class="product-card">
+                <img src="Img/tk.jpg" alt="">
+                <h4>K-Pet Barcelona Transportín de plástico para mascotas</h4>
+                <p class="product-price">88.50€</p>
+                <button>Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Img/kit-conejp.jpg" alt="">
+                <h4>Life kit de iniciación para disfrutar con tus conejos</h4>
+                <p class="product-price">48.20€</p>
+                <button>Agregar al Carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Img/empapadores.jpg" alt="">
+                <h4>Nova Clean Bandeja de Empapadores para perros</h4>
+                <p class="product-price">9.99€</p>
+                <button>Agregar al Carrito</button>
+            </div>
+           
+    
         </div>
-    </section>     
+    </section>
+    
     <div class="containerForm">
         <h3>¿En qué te podemos ayudar?</h3>
       
-        <form id = "formulario" class = "form" action="" method="post">
+        <form id="formulario" class="form" action="#" method="post">
             
-            <div class=form-control>
+            <div class="form-control">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" minlength="3"  placeholder="  Nombre "
-                title="Escribe sólo tu nombre" >
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error message</small>
-                <br>
+                <input type="text" id="name" minlength="3" placeholder="Nombre" title="Escribe sólo tu nombre">
+                <small class="error-message">Este campo es requerido</small>
             </div>
-            <div class=form-control>
+            
+            <div class="form-control">
                 <label for="apellido">Apellidos</label>
-                <input type="text" id="apellido" minlength="3"  placeholder="  Apellidos"
-                    title="Escribe solo tu apellido" >
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                <br>
+                <input type="text" id="apellido" minlength="3" placeholder="Apellidos" title="Escribe solo tu apellido">
+                <small class="error-message">Este campo es requerido</small>
             </div>
-            <div class=form-control>
+            
+            <div class="form-control">
                 <label for="email">Email</label>
-                <input class="email" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-                    placeholder="hola@ejemplo.com" >
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                <br>
+                <input class="email" type="email" id="email" placeholder="hola@ejemplo.com">
+                <small class="error-message">Ingresa una dirección de correo válida</small>
             </div>
-            <div class=form-control>
-                <label for="telefono">Teléfono </label>
-
-                <input  id="telefono" maxlength="12"  
-                    placeholder="  +34 600 000 000" >
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                <br>
+            
+            <div class="form-control">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" maxlength="12" placeholder="+34 600 000 000">
+                <small class="error-message">Este campo es requerido</small>
             </div>
-            <div class=form-control>
+            
+            <div class="form-control">
                 <div class="mensaje">
                     <label for="mensaje">Comentario</label>
-                    <textarea id="mensaje" rows="35" cols="35" placeholder="  Escribe aquí tus dudas" ></textarea> 
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                    <br>
+                    <textarea id="mensaje" rows="5" cols="35" placeholder="Escribe aquí tus dudas"></textarea>
+                    <small class="error-message">Este campo es requerido</small>
                 </div>
             </div>
             
-            <button class="formButton" type="submit" value="Enviar">Enviar</button> 
-            <br>
+            <button class="formButton" type="submit">Enviar</button> 
         </form> 
-    <div id ="error">
-
-    </div> 
+        <div id="error"></div>
     </div>
 <footer>
 <!-- <div class="footer"> -->

@@ -1,71 +1,46 @@
-// formulario Jorge
 const formulario = document.getElementById("formulario");
-const nombre = document.getElementById("name");
-const apellido = document.getElementById("apellido");
-const email = document.getElementById("email");
-const telefono = document.getElementById("telefono");
-const mensaje = document.getElementById("mensaje");
+    const inputs = formulario.querySelectorAll(".form-control input, .form-control textarea");
+    const errorDiv = document.getElementById("error");
 
-formulario.addEventListener("submit", (e) => {
+    formulario.addEventListener("submit", function (e) {
         e.preventDefault();
-        console.log("funciona");
-        checkInputs();
+        
+        let valid = true;
+        errorDiv.innerHTML = "";
 
-});
-// Valida en ingreso de datos
-function checkInputs() {
-        const nameValor = nombre.value.trim();
-        const apellidoValor = apellido.value.trim();
-        const emailValor = email.value.trim();
-        const telefonoValor = telefono.value.trim();
-        const mensajeValor = mensaje.value.trim();
-        
-        if (nameValor === "") {
-            setErrorFor(nombre, "No se puede dejar el nombre en blanco");
-        }else{
-            setSuccessFor(nombre);
+        inputs.forEach(input => {
+            if (!input.value) {
+                showErrorMessage(input, "Este campo es requerido");
+                valid = false;
+            } else if (input.classList.contains("email") && !isValidEmail(input.value)) {
+                showErrorMessage(input, "Ingresa una dirección de correo válida");
+                valid = false;
+            } else {
+                showSuccessMessage(input);
+            }
+        });
+
+        if (valid) {
+            formulario.reset();
+            errorDiv.innerHTML = "<p class='success-message'>Formulario enviado correctamente</p>";
         }
-        if (apellidoValor === "") {
-            setErrorFor(apellido, "No se puede dejar el apellido en blanco");
-        }else{
-            setSuccessFor(apellido);
-        }
-        if(emailValor === "") {
-            setErrorFor(email, 'No puede dejar el email en blanco');
-        } else if (!isEmail(email)) {
-            setErrorFor(email, 'No ingreso un email válido');
-        } else {
-            setSuccessFor(email);
-        }
-        if (telefonoValor === ""){
-            setErrorFor(telefono, "No se puede dejar el teléfono en blanco");
-        } else if(!(/^\+\d{2,3}\s\d{9}$/.test(telefono))) {
-                  setErrorFor(telefono, "el teléfono debe constar + seguido de 2 dígitos  + espacio en blanco y 9 cifras consecutivas"); 
-         }
-         else{
-            setSuccessFor(telefono);
-         }
-        
-        if (mensajeValor === ""){
-            setErrorFor(mensaje, "No se puede dejar el comentario en blanco");
-        }else{
-            setSuccessFor(mensaje);
-        }
+    });
+
+    function showErrorMessage(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector(".error-message");
+        small.innerText = message;
+        formControl.classList.add("error");
     }
 
-// valida el error
-function setErrorFor(input, message){
-    const formControl =input.parentElement;
-    const small =formControl.querySelector("small");
-    formControl.className ="form-control error";
-    small.innerText = message;
-}
-// Si está todo correcto
-function setSuccessFor(input){
-    const formControl = input.parentElement;
-    formControl.ClassName = "form-control success";
-}
-function isEmail(email){
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    function showSuccessMessage(input) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector(".error-message");
+        small.innerText = "";
+        formControl.classList.remove("error");
+    }
 
-}
+    function isValidEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    }
