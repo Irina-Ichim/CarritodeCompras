@@ -13,26 +13,30 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#" class="enlace">
-                <img src="/Img/logo-mascotines.png" alt="" class="logo">
-            </a>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#" class="enlace">
+                    <img src="Img/logo-mascotines.png" alt="Mascotines Logo" class="logo">
+                </a>
+                <label for="check" class="checkbtn">
+                    <img class="hamburguesa" src="Img/barra-de-menus.png" alt="Menu Icon" height="25px" width="25px">
+                </label>
+            </div>
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <img class="hamburguesa" src="/Img/barra-de-menus.png" >
-            </label>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Promociones</a></li>
                 <li><a href="#">¿Te ayudamos?</a></li>
                 <li><a href="#">Atención al cliente</a></li>
-                <li><input class="search" type="text" placeholder="busca un producto.."> </li>
+                <li>
+                    <input class="search" type="text" placeholder="Buscar producto...">
+                </li>
             </ul>
             
-            <div class="header-section container">
+            <div class="header-section cart-container">
                 <div>
-                    <img onclick="showCart(this)" class="cart" src="/Img/icons8-shopping-cart-48.png" alt="">
+                    <img onclick="showCart(this)" class="cart" src="Img/icons8-shopping-cart-48.png" alt="Shopping Cart Icon">
                     <p class="count-product">0</p>
                 </div>
                 <div class="cart-products" id="products-id">
@@ -44,11 +48,11 @@
                         <h2>Total: $<strong class="price-total">0</strong></h2>
                         <a href="" class="btn-pagar">Pagar</a>
                     </div>
-                    
                 </div>
             </div>
         </nav>
     </header>
+    
 
 
     <div class="fotogrande"></div>
@@ -62,7 +66,7 @@
             <button class="btnMobile">Consulta nuestra veterinaria</button>
         </div>
         <div class="cardMobile">
-            <img class="fotoServicios" src="/Img/perroveterinaria.png" alt="">
+            <img class="fotoServicios" src="Img/perroveterinaria.png" alt="">
             <span>Consulta nuestra veterinaria</span>
             <button class="btnMobile">Pide cita</button>
         </div>
@@ -75,19 +79,19 @@
 
         <div class="contenedor-servicios">
             <div class="backgroundService servicio1">
-                <img class="fotoServicios" src="/Img/perropeluqueria.png" alt="">
+                <img class="fotoServicios" src="Img/perropeluqueria.png" alt="">
                 <span>Peluquería</span>
                 <button>Pide cita</button>
             </div>
 
             <div class="backgroundService servicio2">
-                <img class="fotoServicios" src="/Img/perrogato.png" alt="">
+                <img class="fotoServicios" src="Img/perrogato.png" alt="">
                 <span>Educación canina</span>
                 <button>Pide cita</button>
             </div>
 
             <div class="backgroundService servicio3">
-                <img class="fotoServicios" src="/Img/perroveterinaria.png" alt="">
+                <img class="fotoServicios" src="Img/perroveterinaria.png" alt="">
                 <span>Consulta nuestra veterinaria</span>
                 <button>Pide cita</button>
             </div>
@@ -105,7 +109,7 @@
 
                 <div class="carts">
                     <div>
-                        <img src="/Img/royal-canin.jpg" alt="" class="img-item">
+                        <img src="Img/royal-canin.jpg" alt="" class="img-item">
                     </div>
                     <!--class item-->
                     <p class="title">Royal Canin Mini Adult pienso para perros mayores</p>
@@ -118,7 +122,7 @@
 
                 <div class="carts">
                     <div>
-                        <img src="/Img/nath.jpg" alt="" class="img-item">
+                        <img src="Img/nath.jpg" alt="" class="img-item">
                     </div>
                     <!--class item-->
                     <p class="title">Nath Adult Sterilised Pollo en Gelatina sobre para gatos</p>
@@ -131,7 +135,7 @@
 
                 <div class="carts">
                     <div>
-                        <img src="/Img/th-3187545022.jpg" alt="" class="img-item">
+                        <img src="Img/th-3187545022.jpg" alt="" class="img-item">
                     </div>
                     <!--class item-->
                     <p class="title">Vitakraft Premium Menu Comida para periquitos</p>
@@ -144,7 +148,7 @@
 
                 <div class="carts">
                     <div>
-                        <img src="/Img/tk.jpg" alt="" class="img-item">
+                        <img src="Img/tk.jpg" alt="" class="img-item">
                     </div>
                     <!--class item-->
                     <p class="title">TK-Pet Barcelona Transportín de plástico para mascotas</p>
@@ -157,7 +161,7 @@
 
                 <div class="carts">
                     <div>
-                        <img src="/Img/kit-conejp.jpg" alt="" class="img-item">
+                        <img src="Img/kit-conejp.jpg" alt="" class="img-item">
                     </div>
                     <!--class item-->
                     <p class="title">Small Life kit de iniciación para disfrutar con tus conejos</p>
@@ -170,7 +174,7 @@
 
                 <div class="carts">
                     <div>
-                        <img src="/Img/empapadores.jpg" alt="" class="img-item">
+                        <img src="Img/empapadores.jpg" alt="" class="img-item">
                     </div>
                     <!--class item-->
                     <p class="title">Nova Clean Bandeja de Empapadores para perros</p>
@@ -266,11 +270,12 @@
             <li>Aviso Legal</li>
         </ul>
         <div class="footer-media">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://web.telegram.org/k/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.telegram.org/k/" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
+        
 </footer>
     <script src="formulario.js"></script>
     <script src="custom.js"></script>
