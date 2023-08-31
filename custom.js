@@ -5,34 +5,35 @@ let priceTotal = document.querySelector('.price-total')
 let amountProduct = document.querySelector('.count-product');
 let pagarBtn = document.querySelector('.btn-pagar');
 
-
 let buyThings = [];
 let totalCard = 0;
 let countProduct = 0;
 
 //functions
 
-//======================== Mensaje de gracias por tu compra
+// Mensaje de gracias por tu compra
 pagarBtn.addEventListener('click', function() {
-alert('¡Gracias por tu compra!');
+    alert('¡Gracias por tu compra!');
 });
 
-//==============Mostrar carrito flotante
+// Mostrar carrito flotante
 function showCart(x){
-            document.getElementById("products-id").style.display = "block";
-        }
-//===============cerrar carrito flotante
-        function closeBtn(){
-            document.getElementById("products-id").style.display = "none";
-        }
+    document.getElementById("products-id").style.display = "block";
+}
 
-//========================Funcionalidad del boton añadir al carrito
-loadEventListenrs();
-function loadEventListenrs(){
+// Cerrar carrito flotante
+function closeBtn(){
+    document.getElementById("products-id").style.display = "none";
+}
+
+// Funcionalidad del boton añadir al carrito
+
+
+loadEventListeners();
+
+function loadEventListeners(){
     allContainerCart.addEventListener('click', addProduct);
-
     containerBuyCart.addEventListener('click', deleteProduct);
-    
 }
 
 function addProduct(e){
@@ -42,7 +43,8 @@ function addProduct(e){
         readTheContent(selectProduct);
     }
 }
-// funcion del boton eliminar del carrito
+
+// Función del boton eliminar del carrito
 function deleteProduct(e) {
     if (e.target.classList.contains('delete-product')) {
         const deleteId = e.target.getAttribute('data-id');
@@ -54,16 +56,17 @@ function deleteProduct(e) {
                 totalCard = totalCard.toFixed(2);
             }
         });
+
         buyThings = buyThings.filter(product => product.id !== deleteId);
-        
         countProduct--;
+
+        // El contador se quedaba con "1" aunque hubiera 0 productos
+        if (buyThings.length === 0) {
+            priceTotal.innerHTML = 0;
+            amountProduct.innerHTML = 0;
+        }
+        loadHtml();
     }
-    // El contador se quedaba con "1" aunque hubiera 0 productos
-    if (buyThings.length === 0) {
-        priceTotal.innerHTML = 0;
-        amountProduct.innerHTML = 0;
-    }
-    loadHtml();
 }
 
 function readTheContent(product){
@@ -85,16 +88,15 @@ function readTheContent(product){
                 product.amount++;
                 return product;
             } else {
-                return product
+                return product;
             }
         });
         buyThings = [...pro];
     } else {
-        buyThings = [...buyThings, infoProduct]
+        buyThings = [...buyThings, infoProduct];
         countProduct++;
     }
     loadHtml();
-    //console.log(infoProduct);
 }
 
 function loadHtml(){
@@ -118,7 +120,6 @@ function loadHtml(){
         `;
         
         // Funcionalidad del icono (mas y menos)
-        //==============================================================================================================================================================
         const sumarIcono = row.querySelector('.sumar-cantidad');
         const restarIcono = row.querySelector('.restar-cantidad');
         const amountInput = row.querySelector('.carrito-item-cantidad');
@@ -147,11 +148,8 @@ function loadHtml(){
     priceTotal.innerHTML = totalCard;
     amountProduct.innerHTML = countProduct;
 }
-        containerBuyCart.appendChild(row);
 
-        priceTotal.innerHTML = totalCard;
-
-        amountProduct.innerHTML = countProduct;
 function clearHtml(){
     containerBuyCart.innerHTML = '';
 }
+
