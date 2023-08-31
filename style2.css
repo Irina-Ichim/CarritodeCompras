@@ -133,6 +133,47 @@ body {
         transform: translateX(-100%);
     }
 }
+.servicios-destacados {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.servicio-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.fotoServicios {
+    max-width: 150px;
+}
+
+.servicio-card h4 {
+    margin: 10px 0;
+}
+
+.servicio-card button {
+    background-color: #007f7e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.servicio-card button:hover {
+    background-color: #005d5c;
+}
+
 
   
   .footer {
