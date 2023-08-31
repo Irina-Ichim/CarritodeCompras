@@ -8,6 +8,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden;
   }
   .navbar {
     display: flex;
@@ -47,36 +48,92 @@ body {
   .nav-list li a:hover {
     color: #005d5c;
   }
-  
+  .checkbtn{
+    display: none;
+  }
+  .checkbox{
+    display: none;
+  }
   
   .cart-container {
     display: flex;
     align-items: center;
   }
   
-
-  button, .btn-add-cart {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    padding: 8px 20px;
+  .cart {
+    position: relative;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
   
-  button:hover, .btn-add-cart:hover {
-    background-color: #e65100;
+  .count-product {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:#007f7e;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
   }
+  
+  .cart-products {
+    position: relative;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    right: 0;
+    top: 60px;
+    z-index: 1;
+  }
+  
+  .cart.active .cart-products {
+    display: block;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  
   .servicios, .productos, .containerForm {
     padding: 50px 0;
     background-color: #fff;
   }
   
-  .fotogrande {
-    background-image: url('/Img/background-image.jpg');
-    background-size: cover;
+  .carousel-container {
+    width: 100%;
+    overflow-x: hidden;
+    height: 400px;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
     height: 300px;
-  }
+    animation: slide 20s infinite alternate;
+}
+
+.carousel img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
   
   .footer {
     background-color: #333;
@@ -88,5 +145,42 @@ body {
   .footer a {
     color: #009dff;
   }
+  /* Estilos generales */
+
+/* Mostrar el checkbox y el icono de hamburguesa solo en dispositivos móviles */
+@media (max-width: 768px) {
+    #check {
+      display: block;
+    }
+    
+    .checkbtn {
+      display: block;
+    }
+    
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      background-color: #fff;
+      top: 60px;
+      left: 0;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    /* Estilos adicionales para el menú móvil */
+    .navbar.active .nav-list {
+      display: flex;
+      opacity: 1;
+    }
+    
+    .nav-list li {
+      margin: 10px 0;
+    }
+  }
+  
   
     
