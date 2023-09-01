@@ -11,7 +11,7 @@ body {
 .faq-section {
     display: inline-block;
     width: 80%;
-    margin: 150px; /* Utiliza 'auto' para centrar horizontalmente */
+    margin: 150px; 
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;

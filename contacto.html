@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contact-section" onclick="window.location.href='pagina_contacto.html';">
+        <h2>Contacto</h2>
+        <div class="contact-content">
+            <p>No dudes en contactar con nosotros. Estamos aquí para asesorarte en lo que necesites.</p>
+            <p>¡Puedes llamarnos al <span class="phone-number">+1 (123) 456-7890</span> para obtener ayuda inmediata!</p>
+            <p>También nos encuentras en las redes sociales:</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="Img/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a>
+            </div>
+            <p class="logo-info">Visita nuestro sitio web: <a href="#" target="_blank">https://github.com/Irina-Ichim</a></p>
+        </div>
+        <div class="contact-image">
+            <img src="Img/logo-mascotines.png" alt="Contacto">
+        </div>
+    </section>
+    
+    <div class="containerForm">
+        <h3>¿En qué te podemos ayudar?</h3>
+        <form id="formulario" class="form" action="#" method="post">
+            <div class="form-control">
+                <label for="name">Nombre y Apellidos</label>
+                <input type="text" id="name" minlength="3" placeholder="Nombre" title="Escribe sólo tu nombre">
+                <small class="error-message">Este campo es requerido</small>
+            </div>
+          
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input class="email" type="email" id="email" placeholder="hola@ejemplo.com">
+                <small class="error-message">Ingresa una dirección de correo válida</small>
+            </div>
+            <div class="form-control">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" maxlength="12" placeholder="+34 600 000 000">
+                <small class="error-message">Este campo es requerido</small>
+            </div>
+            <div class="form-control">
+                <div class="mensaje">
+                    <label for="mensaje">Comentario</label>
+                    <textarea id="mensaje" rows="5" cols="35" placeholder="Escribe aquí tus dudas"></textarea>
+                    <small class="error-message">Este campo es requerido</small>
+                </div>
+            </div>
+            <button class="formButton" type="submit">Enviar</button>
+        </form>
+        <div id="error"></div>
+    </div>
+    
+    
+
+
+</body>
+</html>
+

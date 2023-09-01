@@ -1,0 +1,133 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 110px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-section:hover {
+    background-color: #eee;
+}
+
+.contact-section h2 {
+    margin-top: 0;
+    color: #007f7e;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilos para el contenido de contacto */
+.contact-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.phone-number {
+    color: #007f7e;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+/* Estilos para la imagen de contacto */
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Estilos para el formulario de contacto */
+.containerForm {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 110px;
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.containerForm h3 {
+    color: #007f7e;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formButton {
+    background-color: #007f7e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.formButton:hover {
+    background-color: #005d5c;
+}
+
+.error-message {
+    display: none;
+    color: #ff3333;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.form-control.invalid .error-message {
+    display: block;
+}
+
+
+
