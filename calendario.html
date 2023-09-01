@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calendario.css" />
+    <title>Calendario de Eventos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calendario de Eventos</h1>
+    </header>
+
+    <main class="main-container">
+      <section class="events-section" id="upcoming-events">
+        <h2>Próximos Eventos</h2>
+        <ul id="event-list">
+          <!-- Eventos se agregarán aquí dinámicamente con JavaScript -->
+        </ul>
+      </section>
+
+      <section class="carousel-section">
+        <div id="myCarousel" class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="Img/adopcion.jpg"
+                alt="Imagen 1"
+                width="600px"
+                height="225px"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Img/cuidadomascotas.jpg"
+                alt="Imagen 2"
+                width="600px"
+                height="225px"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="Img/disfracesmascotas.jpg"
+                alt="Imagen 3"
+                width="600px"
+                height="225px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="calendario.js"></script>
+  </body>
+</html>
