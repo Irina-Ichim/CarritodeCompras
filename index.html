@@ -24,11 +24,11 @@
             </div>
           <!-- <input type="checkbox" id="check" />-->
             <ul class="nav-list">
-                <li><a href="#">Servicios</a></li>
+                <li><a href="#servicios-destacados">Servicios</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Promociones</a></li>
                 <li><a href="te-ayudamos.html">¿Te ayudamos?</a></li>
-                <li><a href="#">Atención al cliente</a></li>
+                <li><a href="#containerForm">Atención al cliente</a></li>
                 <li>
                     <input class="search" type="text" placeholder="Buscar producto...">
                 </li>
@@ -36,7 +36,7 @@
             
             <div class="header-section cart-container">
                 <div>
-                    <img onclick="showCart(this)" class="cart" src="Img/icons8-shopping-cart-48.png" alt="Shopping Cart Icon">
+                    <img onclick="showCart(this)" class="cart" src="Img/icons8-shopping-cart-48.png" alt="Shopping Cart Icon" width="40px">
                     <p class="count-product">0</p>
                 </div>
                 <div class="cart-products" id="products-id">
@@ -67,7 +67,7 @@
     </div>
     
 
-    <section class="servicios-destacados">
+    <section class="servicios-destacados" id="servicios-destacados">
         <h3>Servicios Destacados</h3>
         
         <div class="servicio-card">
@@ -140,7 +140,7 @@
         </div>
     </section>
     
-    <div class="containerForm">
+    <div class="containerForm" id="containerForm">
         <h3>¿En qué te podemos ayudar?</h3>
       
         <form id="formulario" class="form" action="#" method="post">

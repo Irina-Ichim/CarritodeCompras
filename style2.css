@@ -72,6 +72,7 @@ body {
   color: #fff;
   border-radius: 50%;
   padding: 4px 8px;
+  height: 30px;
 }
 
 .cart-products {
@@ -105,6 +106,10 @@ body {
   padding: 50px 0;
   background-color: #fff;
 }
+.servicios-destacados h3{
+  color:#005d5c;
+  margin-top: 20px;
+}
 
 .carousel-container {
   width: 100%;
@@ -136,7 +141,7 @@ body {
 }
 .servicios-destacados {
   text-align: center;
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -178,7 +183,7 @@ body {
 
 .productos {
   text-align: center;
-  padding: 50px 0;
+  padding: 30px 0;
   background-color: #f4f4f4;
 }
 
@@ -191,6 +196,7 @@ body {
 }
 
 .product-card {
+  margin-top: 20px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -203,7 +209,10 @@ body {
   max-width: 100%;
   height: auto;
 }
-
+.productos h3{
+  text-align: center;
+  color: #005d5c;
+}
 .product-card h4 {
   margin-top: 10px;
   font-size: 18px;
