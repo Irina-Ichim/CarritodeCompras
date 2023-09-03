@@ -6,6 +6,7 @@ import irinaichim.backend.domain.Product
 import org.springframework.http.ResponseEntity
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/products")
 class ProductController {
 
