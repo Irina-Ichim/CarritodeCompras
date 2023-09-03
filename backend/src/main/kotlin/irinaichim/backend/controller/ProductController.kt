@@ -3,6 +3,7 @@ package irinaichim.backend.controller
 
 import org.springframework.web.bind.annotation.*
 import irinaichim.backend.domain.Product
+import org.springframework.http.ResponseEntity
 
 @RestController
 @RequestMapping("/api/products")
@@ -37,5 +38,9 @@ class ProductController {
         return product
     }
 
-    // Otros métodos CRUD (Actualizar y Eliminar) pueden agregarse aquí
-}
+    // Actualizar un producto por ID
+
+    }
+
+
+

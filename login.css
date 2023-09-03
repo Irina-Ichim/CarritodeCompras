@@ -1,78 +1,75 @@
-/* Estilos generales */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
 .login-page {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 100vh;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
 }
 
 .login-container {
-    
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
 }
 
 .login-container h1 {
-    font-size: 1.5rem;
-    color: #333;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 .login-container label {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }
 
 .login-container input {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .login-container button {
-    background-color: #007f7e;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #007f7e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .login-container button:hover {
-    background-color: #005f5e;
+  background-color: #005f5e;
 }
 
 .options {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .options a {
-    display: block;
-    text-decoration: none;
-    color: #007f7e;
-    margin-top: 10px;
-    font-size: 0.9rem;
+  display: block;
+  text-decoration: none;
+  color: #007f7e;
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
-/* Estilos para la imagen */
 .login-page img {
-    width: 300px; 
-    height: 376px;
-    right: 0;
-    top: 0;
+  width: 300px;
+  height: 376px;
+  right: 0;
+  top: 0;
 }
