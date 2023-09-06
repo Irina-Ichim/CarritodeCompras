@@ -1,6 +1,4 @@
-package irinaichim.backend.controller
-
-
+import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.*
 import irinaichim.backend.domain.Product
 import org.springframework.http.ResponseEntity
@@ -19,9 +17,9 @@ class ProductController {
     )
 
     // Obtener todos los productos
-    @GetMapping
-    fun getAllProducts(): List<Product> {
-        return products
+    @GetMapping("/")
+    fun index(): String {
+        return "productos" // Reemplaza "productos.html" con la ruta correcta a tu archivo HTML principal.
     }
 
     // Obtener un producto por ID
@@ -40,8 +38,4 @@ class ProductController {
     }
 
     // Actualizar un producto por ID
-
-    }
-
-
-
+}
